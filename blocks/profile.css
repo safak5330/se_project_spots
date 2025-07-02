@@ -1,0 +1,143 @@
+.profile {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 1280px;
+  /* box-sizing: border-box; */
+  border-bottom: rgba(0, 0, 0, 0.4) 1px solid;
+}
+
+.profile__information {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__image {
+  width: 190px;
+  height: 190px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.profile__name {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #212121;
+  /* text-overflow: hidden;
+  white-space: wrap;
+  line-clamp: 3;
+  overflow: hidden;*/
+  max-width: 420px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipses;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.profile__role {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 500;
+  color: #212121;
+  opacity: 0.4;
+  max-width: 420px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipses;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.profile__edit-container {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 0;
+  column-gap: 8px;
+  color: black;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+.profile__edit-container:hover {
+  opacity: 1;
+}
+
+.profile__edit {
+  line-height: 1;
+}
+
+.profile__new-post {
+  display: flex;
+  column-gap: 8px;
+  border-radius: 8px;
+  margin-top: auto;
+  margin-left: auto;
+  width: 149px;
+  height: 52px;
+  background-color: #212121;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  box-sizing: border-box;
+  line-height: 1;
+  color: #fcf5e5;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__new-post-icon {
+  width: 12px;
+  height: 12px;
+}
+
+/**********Media Queries**************/
+
+@media screen and (min-width: 690px) and (max-width: 1320px) {
+  .profile {
+    max-width: 1280px;
+    min-width: 630px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 690px) {
+  .profile {
+    width: 100%;
+    max-width: 288px;
+  }
+  .profile__image {
+    width: 80px;
+    height: 80px;
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+  .profile__name {
+    margin-bottom: 6px;
+    line-height: 1;
+    font-size: 20px;
+  }
+  .profile__role {
+    margin-bottom: 32px;
+    /* font-size: 100%; */
+    /* line-height: 0.625; doesn't seem to affect*/
+    line-height: 1;
+  }
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile__information {
+    align-items: center;
+  }
+  .profile__new-post {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .profile__edit-container {
+    margin-bottom: 20px;
+  }
+}
