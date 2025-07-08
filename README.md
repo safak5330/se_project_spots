@@ -16,6 +16,8 @@ This is the third project of the Software Engineering program at TripleTen. It w
 
 This project demonstrates the layout for a social media website where users can upload their own avatar and post custom photos and captions. A 'like' button accompanies each post, allowing site users to interact. The layout for the website was designed for large monitors (1440px and greater), medium-sized laptops and tablets (between 630px and 960px), and mobile devices as small as 320px in width. In its full view, the site implements a grid in order to show two rows of three posts, and this shrinks down into a single column as the viewport shrinks.
 
+![responsive](./screenshots/responsive-ezgif.com-video-to-gif-converter.gif)
+
 **Figma**
 
 The site was layed out according to full-size and small-size designs that were provided in Figma. This is a common way that designers share website layout guidelines to engineers and being able to adapt a Figma design to a live website allows for seamless cross-department cooperation. You can see the original layout design in the link below.
