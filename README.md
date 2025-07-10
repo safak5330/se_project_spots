@@ -31,3 +31,7 @@ The site was layed out according to full-size and small-size designs that were p
 - Grid layout: used **display: grid;** in order to design a layout that was adaptable to screen size and not dependent on fixed widths. Using grid, you can set the number of columns and rows, and their size can be set with relative units which is very useful in responsive layouts.
 
 ![grid](./screenshots/grid%20-%201751572099942.gif)
+
+## Project description video narrated by me
+
+[Watch here!](https://drive.google.com/file/d/1EFi1A_W--7YnDYB6kLG9kftHhgzjyhoc/view?usp=drive_link)
