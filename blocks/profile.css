@@ -1,7 +1,7 @@
 .profile {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding: 34px 0px 20px;
   width: 100%;
   max-width: 1280px;
   border-bottom: rgba(0, 0, 0, 0.4) 1px solid;
@@ -30,7 +30,7 @@
   max-width: 420px;
   display: -webkit-box;
   overflow: hidden;
-  text-overflow: ellipses;
+  text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
@@ -42,11 +42,11 @@
   font-size: 16px;
   font-weight: 500;
   color: #212121;
-  opacity: 0.4;
+  opacity: 0.7;
   max-width: 420px;
   display: -webkit-box;
   overflow: hidden;
-  text-overflow: ellipses;
+  text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
@@ -59,13 +59,17 @@
   color: black;
   opacity: 0.4;
   transition: opacity 0.3s;
+  cursor: pointer;
+  line-height: 1;
+  border: none;
+  background-color: #fcf5e5;
 }
+
 .profile__edit-container:hover {
   opacity: 1;
 }
 
 .profile__edit {
-  line-height: 1;
   font-size: 16px;
 }
 
@@ -81,10 +85,16 @@
   padding-top: 18px;
   padding-bottom: 18px;
   box-sizing: border-box;
-  :1 ;
+  cursor: pointer;
   color: #fcf5e5;
   align-items: center;
   justify-content: center;
+  transition: opacity 0.3s;
+  border: none;
+}
+
+.profile__new-post:hover {
+  opacity: 0.8;
 }
 
 .profile__new-post-icon {
@@ -104,7 +114,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 690px) {
   .profile {
-    width: 100%;
+    padding-top: 20px;
     max-width: 288px;
   }
   .profile__image {
@@ -115,13 +125,10 @@
   }
   .profile__name {
     margin-bottom: 6px;
-    line-height: 1;
     font-size: 20px;
   }
   .profile__role {
     margin-bottom: 32px;
-    font-size: 16px;
-    line-height: 1;
   }
   .profile {
     flex-direction: column;
