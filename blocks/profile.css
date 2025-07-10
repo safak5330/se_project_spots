@@ -56,8 +56,8 @@
   margin-top: auto;
   margin-bottom: 0;
   column-gap: 8px;
-  color: black;
-  opacity: 0.4;
+  color: #212121;
+  opacity: 0.7;
   transition: opacity 0.3s;
   cursor: pointer;
   line-height: 1;
@@ -116,6 +116,7 @@
   .profile {
     padding-top: 20px;
     max-width: 288px;
+    align-self: center;
   }
   .profile__image {
     width: 80px;

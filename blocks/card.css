@@ -34,6 +34,7 @@
   transition: opacity 0.3s;
   cursor: pointer;
   background-image: url("../images/like-icon.svg");
+  background-repeat: no-repeat;
   background-size: contain;
   border: none;
   background-color: #fcf5e5;
