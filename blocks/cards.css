@@ -1,5 +1,5 @@
 .cards {
-  margin: 20px auto 60px;
+  margin: 20px auto 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(auto-fit, 1fr);
