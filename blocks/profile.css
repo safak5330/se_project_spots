@@ -62,7 +62,8 @@
   cursor: pointer;
   line-height: 1;
   border: none;
-  background-color: #fcf5e5;
+  background-color: transparent;
+  font-size: 16px;
 }
 
 .profile__edit-container:hover {
@@ -70,7 +71,7 @@
 }
 
 .profile__edit {
-  font-size: 16px;
+  margin: 0;
 }
 
 .profile__new-post {
