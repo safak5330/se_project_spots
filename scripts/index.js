@@ -10,43 +10,52 @@ const editProfileName = editProfileForm.querySelector("#profile-name-input");
 const editProfileDescription = editProfileForm.querySelector(
   "#profile-description-input"
 );
-const SubmitBtn = editProfileForm.querySelector(".modal__form");
+const submitBtn = editProfileForm.querySelector(".modal__form");
 const linkInput = newPostForm.querySelector("#image-link");
 const captionInput = newPostForm.querySelector("#image-caption");
-const SaveBtn = newPostForm.querySelector(".modal__form");
+const saveBtn = newPostForm.querySelector(".modal__form");
 
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();
   profileName.textContent = editProfileName.value;
   profileDescription.textContent = editProfileDescription.value;
-  editProfileForm.classList.remove("modal_is-opened");
+  closeModal(editProfileForm);
 }
 
 function handleImageFormSubmit(evt) {
   evt.preventDefault();
   console.log(linkInput.value);
   console.log(captionInput.value);
-  newPostForm.classList.remove("modal_is-opened");
+  closeModal(newPostForm);
+  evt.target.reset();
+}
+
+function openModal(modal) {
+  modal.classList.add("modal_is-opened");
+}
+
+function closeModal(modal) {
+  modal.classList.remove("modal_is-opened");
 }
 
 editProfileBtn.addEventListener("click", function () {
-  editProfileForm.classList.add("modal_is-opened");
+  openModal(editProfileForm);
   editProfileName.value = profileName.textContent;
   editProfileDescription.value = profileDescription.textContent;
 });
 
-editProfileCloseBtn.addEventListener("click", function () {
-  editProfileForm.classList.remove("modal_is-opened");
+editProfileCloseBtn.addEventListener("click", () => {
+  closeModal(editProfileForm);
 });
 
-SubmitBtn.addEventListener("submit", handleProfileFormSubmit);
+submitBtn.addEventListener("submit", handleProfileFormSubmit);
 
-newPostBtn.addEventListener("click", function () {
-  newPostForm.classList.add("modal_is-opened");
+newPostBtn.addEventListener("click", () => {
+  openModal(newPostForm);
 });
 
-newPostCloseBtn.addEventListener("click", function () {
-  newPostForm.classList.remove("modal_is-opened");
+newPostCloseBtn.addEventListener("click", () => {
+  closeModal(newPostForm);
 });
 
-SaveBtn.addEventListener("submit", handleImageFormSubmit);
+saveBtn.addEventListener("submit", handleImageFormSubmit);

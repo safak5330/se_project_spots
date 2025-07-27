@@ -6,7 +6,7 @@ This is the third project of the Software Engineering program at TripleTen. It w
 
 ![preview](./screenshots/preview.png)
 
-### Overview
+# Overview
 
 - Intro
 - Figma
@@ -32,6 +32,6 @@ The site was layed out according to full-size and small-size designs that were p
 
 ![grid](./screenshots/grid%20-%201751572099942.gif)
 
-## Project description video narrated by me
+### Project description video narrated by me
 
 [Watch here!](https://drive.google.com/file/d/1EFi1A_W--7YnDYB6kLG9kftHhgzjyhoc/view?usp=drive_link)
